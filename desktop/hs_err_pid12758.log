@@ -1,0 +1,34 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fd5bcb67e67, pid=12758, tid=12763
+#
+# JRE version: OpenJDK Runtime Environment (17.0.6+10) (build 17.0.6+10-Debian-1)
+# Java VM: OpenJDK 64-Bit Server VM (17.0.6+10-Debian-1, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libc.so.6+0x94e67]
+[timeout occurred during error reporting in step "printing problematic frame"] after 30 s.
+# Core dump will be written. Default location: Core dumps may be processed with "/lib/systemd/systemd-coredump %P %u %g %s %t 9223372036854775808 %h" (or dumping to /home/rams/Desktop/Tetikasa/Ilefohy/desktop/core.12758)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.debian.org/openjdk-17
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true com.ilefohy.game.DesktopLauncher
+
+Host: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, 
+[timeout occurred during error reporting in step "printing summary machine and OS info"] after 30 s.
+Time: Fri Feb 17 19:15:36 2023 SAST elapsed time: 92.910854 seconds (0d 0h 1m 32s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fd5b4016150):  JavaThread "main" [_thread_in_native, id=12763, stack(0x00007fd5bb500000,0x00007fd5bb600000)]
+
+Stack: [0x00007fd5bb500000,0x00007fd5bb600000],  sp=0x00007fd5bb5fda90,  free space=1014k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libc.so.6+0x94e67]
+------ Timeout during error reporting after 120 s. ------
